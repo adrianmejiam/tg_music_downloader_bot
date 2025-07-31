@@ -6,7 +6,7 @@ import configparser
 
 import streamrip
 
-from .sql import read_client, update_or_create_client
+from .sql import update_or_create_client
 
 from telegram import InlineQueryResultArticle, InputTextMessageContent, Update, InlineKeyboardMarkup, InlineKeyboardButton, KeyboardButton
 from telegram.constants import ParseMode
