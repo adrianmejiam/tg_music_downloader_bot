@@ -3,10 +3,11 @@ from pathlib import Path
 import os
 import shutil
 import configparser
+import mysql.connector # or pymysql, psycopg2, sqlite3, pyodbc
 
 import streamrip
 
-from .sql import update_or_create_client
+from .sql import read_client, update_or_create_client
 
 from telegram import InlineQueryResultArticle, InputTextMessageContent, Update, InlineKeyboardMarkup, InlineKeyboardButton, KeyboardButton
 from telegram.constants import ParseMode
